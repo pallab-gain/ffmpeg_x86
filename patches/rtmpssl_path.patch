@@ -1,0 +1,11 @@
+--- Android.mk	2015-08-05 15:42:01.388278718 +0600
++++ Android_new.mk	2015-08-05 15:47:54.728268669 +0600
+@@ -4,7 +4,7 @@
+ 		librtmp \
+ 	))
+ 
+-#SSL := ~/SSL
++SSL:=`pwd`/../openssl-android
+ ifndef SSL
+ $(error "You must define SSL before starting")
+ endif
