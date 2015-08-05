@@ -15,20 +15,20 @@ ANDROID_NDK_ROOT=/home/pallab/Documents/IDE/Sdk/ndk-bundle
 ```
 - ***Build openssl for android x86***
 ```
-- chmod +x build_openssl.sh
-- ./build_openssl.sh
+ chmod +x build_openssl.sh
+ ./build_openssl.sh
 ```
 
 - ***Build rtmp for android x86***
 ```
-- chmod +x build_rtmp.sh
-- ./build_rtmp.sh
+ chmod +x build_rtmp.sh
+ ./build_rtmp.sh
 ```
 
 - ***Build ffmpeg for android x86***
 ```
-- chmod +x build_ffmpeg.sh
-- ./build_ffmpeg.sh
+ chmod +x build_ffmpeg.sh
+ ./build_ffmpeg.sh
 ```
 
 
