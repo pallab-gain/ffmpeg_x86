@@ -13,6 +13,11 @@ function apply_patch(){
   echo "Applying patch for x86 android build ..."
   patch -u ${src_root}/openssl-android/jni/Application.mk ${src_root}/patches/ssl_x86.patch 
 }
+function build_openssl(){
+  cd ${src_root}/openssl-android
+  ${NDK}/ndk-build
+}
 
 build_openssl
 apply_patch
+build_openssl
