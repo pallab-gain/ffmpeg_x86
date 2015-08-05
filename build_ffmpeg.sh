@@ -12,7 +12,7 @@ RTMP_DIR=${src_root}/librtmp/libs/x86
 RTMP_BASE=${src_root}/librtmp
 
 
-function clone_ffmpeg () {
+function clone_ffmpeg() {
   # download ffmpeg
   ffmpeg_archive=${src_root}/ffmpeg-snapshot.tar.bz2
   if [ ! -f "${ffmpeg_archive}" ]; then
@@ -35,6 +35,8 @@ function apply_patch_librtmp_pkg_fix(){
 }
 
 function build_ffmpeg(){
+  apply_patch_librtmp_pkg_fix
+
   addi_cflags="-march=x86"
   cd ${src_root}/ffmpeg
   ./configure \
@@ -54,8 +56,6 @@ function build_ffmpeg(){
 --disable-ffplay --disable-ffserver --disable-symver --disable-ffprobe \
 --enable-asm \
 --enable-yasm $ADDITIONAL_CONFIGURE_FLAG 
-
-apply_patch_librtmp_pkg_fix
 
 make clean
 make  -j4 install

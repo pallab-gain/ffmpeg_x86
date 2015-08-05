@@ -4,7 +4,7 @@
 src_root=`pwd`
 NDK=/home/pallab/Documents/IDE/Sdk/ndk-bundle
 
-function clone_rtmp () {
+function clone_rtmp() {
   echo "Cloning librtmp ..."
   test -d ${src_root}/librtmp || \
   git clone https://github.com/pallab-gain/librtmp.git

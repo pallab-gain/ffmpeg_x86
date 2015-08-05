@@ -4,7 +4,7 @@
 src_root=`pwd`
 NDK=/home/pallab/Documents/IDE/Sdk/ndk-bundle
 
-function clone_openssl () {
+function clone_openssl() {
   echo "Cloning openssl-android ..."
   test -d ${src_root}/openssl-android || \
   git clone https://github.com/pallab-gain/openssl-android.git ${src_root}/openssl-android 
