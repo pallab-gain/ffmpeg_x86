@@ -1,5 +1,5 @@
 # ffmpeg_x86
-****Simple ffmpeg X86 builder scripts for android that helps to build, and test streaming solution(s) @Augmedix****
+###### Simple ffmpeg X86 builder scripts for android ######
 
 - ***We need to build sequencially. First openssl, then rtmp, and then ffmpeg***
 ```
