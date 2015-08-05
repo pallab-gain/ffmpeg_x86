@@ -1,0 +1,6 @@
+--- Application.mk	2015-08-05 14:12:49.708430914 +0600
++++ Applicationx86.mk	2015-08-05 14:14:48.888427525 +0600
+@@ -1,2 +1,3 @@
++APP_ABI := x86, armeabi
+ APP_PROJECT_PATH := $(shell pwd)
+ APP_BUILD_SCRIPT := $(APP_PROJECT_PATH)/Android.mk
