@@ -13,19 +13,19 @@ Simple ffmpeg X86 builder script for android for later reference
 NDK=/home/pallab/Documents/IDE/Sdk/ndk-bundle, and
 ANDROID_NDK_ROOT=/home/pallab/Documents/IDE/Sdk/ndk-bundle
 ```
-***Build openssl for android x86***
+-***Build openssl for android x86***
 ```
 chmod +x build_openssl.sh
 ./build_openssl.sh
 ```
 
-***Build rtmp for android x86***
+-***Build rtmp for android x86***
 ```
 chmod +x build_rtmp.sh
 ./build_rtmp.sh
 ```
 
-***Build ffmpeg for android x86***
+-***Build ffmpeg for android x86***
 ```
 chmod +x build_ffmpeg.sh
 ./build_ffmpeg.sh
